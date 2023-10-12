@@ -37,7 +37,6 @@ const backup = async () => {
 
             comments.push(...postComments);
             console.log(...postComments)
-
         }
 
         fs.writeFile("./data/comments.json", JSON.stringify(comments, null, 2))
